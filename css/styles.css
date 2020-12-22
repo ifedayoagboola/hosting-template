@@ -167,7 +167,7 @@ pre {
 }
 
 /* Features */
-.features-head,
+.features-head img,
 .docs-head img {
   width: 200px;
   justify-self: flex-end;
