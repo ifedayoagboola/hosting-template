@@ -208,6 +208,43 @@ pre {
   font-weight: bold;
 }
 
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /* Footer */
 .footer .social a {
   margin: 0 10px;
@@ -267,5 +304,11 @@ pre {
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
+  }
+   .showcase-text {
+    animation: slideInFromTop 1s ease-in;
+  }
+  .showcase-form {
+    animation: slideInFromBottom 1s ease-in;
   }
 }
